@@ -45,6 +45,7 @@ function generatePassword() {
     return;
   }
 
+  // Defining an empty character set
   let characterSet = "";
 
   if (lowercase) characterSet += lowercaseLetters;
@@ -57,6 +58,8 @@ function generatePassword() {
       password += characterSet[Math.floor(Math.random() * characterSet.length)];
   }
 
+  // The password is then stored in the console and displayed on the page
+  console.log(password);
   return password;
 }
 
